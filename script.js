@@ -17,11 +17,11 @@ Stabil
 */
 
 const categoryMap = {
-  terbaru: "indonesia",
-  teknologi: "technology",
-  olahraga: "sports",
-  ekonomi: "business",
-  gayaHidup: "lifestyle",
+  latest: "indonesia",
+  technology: "technology",
+  sport: "sports",
+  economy: "business",
+  lifestyle: "lifestyle",
 };
 
 async function fetchNews() {
