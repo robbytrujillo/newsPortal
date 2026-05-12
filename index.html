@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsPortal Modern</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">📰 NewsPortal</div>
+
+        <nav>
+          <!-- Search -->
+          <input type="text" id="searchInput" placeholder="Cari berita..." />
+
+          <!-- Category -->
+          <select id="categorySelect">
+            <option value="terbaru">Semua Kategori</option>
+            <option value="teknologi">Teknologi</option>
+            <option value="olahraga">Olahraga</option>
+            <option value="ekonomi">Ekonomi</option>
+            <option value="gayaHidup">Gaya Hidup</option>
+          </select>
+
+          <!-- Dark Mode -->
+          <button id="darkModeToggle">🌙</button>
+        </nav>
+      </header>
+
+      <main>
+        <!-- News Content -->
+        <section id="newsContainer" class="news-grid">
+          <!-- Data berita akan tampil di sini -->
+        </section>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button id="prevBtn">← Prev</button>
+          <span id="pageInfo">Halaman 1</span>
+          <button id="nextBtn">Next →</button>
+        </div>
+      </main>
+    </div>
+
+    <!-- Loading -->
+    <div id="loading" class="loading">Loading berita...</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

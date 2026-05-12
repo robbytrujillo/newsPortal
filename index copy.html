@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsPortal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">📰 NewsPortal</div>
+        <nav>
+          <input type="text" id="searchInput" placeholder="Cari berita..." />
+
+          <select id="categorySelect">
+            <option value="">Semua Kategori</option>
+            <option value="technology">Teknologi</option>
+            <option value="sports">Olahraga</option>
+            <option value="business">Bisnis</option>
+            <option value="health">Kesehatan</option>
+          </select>
+
+          <button id="darkModeToggle">🌙</button>
+        </nav>
+      </header>
+      <main>
+        <section id="newsContainer" class="news-grid"></section>
+        <div class="pagination">
+          <button id="prevBtn">← Prev</button> <span id="pageInfo"></span>
+          <button id="nextBtn">Next →</button>
+        </div>
+      </main>
+    </div>
+    <div id="loading" class="loading">Loading berita...</div>
+    <script src="script.js"></script>
+  </body>
+</html>
